@@ -1,5 +1,9 @@
 # Here we have some useful note for How to use vim editor fluently.
 
+################ How Show line number in file  ################
+# type :set number
+############################################################
+
 ################ How to move in vim editor ################
 
 # KEY h move cursor left one character 
@@ -70,4 +74,34 @@
 # press Enter 
 # KEY n go to next serach result 
 # KEY N go to previous serach result
+############################################################
+
+############### How Replace word    ####################
+
+# only finds the word in current line
+#   in command Mode Type :s/oldword/neword
+#       exmaple-> :s/three/two -> only changed first matched of "three" in current Line
+
+# finds the word in whole file
+#   in command Mode Type :%s/oldword/neword
+#       exmaple-> :%s/three/two -> only changed the first match of "three" in whole file
+
+# finds every occurrence in whole file
+#   in command Mode Type :%s/oldword/neword/g -> 
+#       exmaple-> :%s/three/two/g -> changes every word match with "three" in whole file
+
+# finds every occurrence on lines between two number 
+#    in command Mode Type :<number>,<number>s/oldword/neword/g
+#         exmaple-> :3,5s/three/two/g -> changes every word match with "three" in lines between 3,5 
+
+# finds and replace every occurrence in whole file with confirmation
+#   in command Mode Type :%s/oldword/neword/gc -> 
+#       exmaple-> :%s/three/two/gc -> changes every word match with "three" in whole file with confirmation
+
+############################################################
+
+############### FIND MATCHING  ),], or }    ####################
+# Place the cursor on any (, [, or { 
+# type the % character 
+# The cursor will move to the matching parenthesis or bracket
 ############################################################
