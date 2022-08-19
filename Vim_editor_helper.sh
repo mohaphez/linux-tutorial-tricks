@@ -1,5 +1,10 @@
 # Here we have some useful note for How to use vim editor fluently.
 
+################ How change default editor in system  ################
+# for change default editor in linux you have change EDITOR variable like 
+#     Example -> export EDITOR=vim 
+############################################################
+
 ################ How Show line number in file  ################
 # type :set number
 ############################################################

@@ -55,7 +55,10 @@
     history
     echo $HISFILE # prints the history file location 
   # Note -> the history file will not have commands you have used during your current login session . if you desire to update the history file use following options 
-     history -a # appends the current history list commands to end of the history file 
-     history -n # appends the history commands from the current session to the current history list 
-     history -r # overwrite the current history list commands with the commands stored in the history file 
-    
+    history -a # appends the current history list commands to end of the history file 
+    history -n # appends the history commands from the current session to the current history list 
+    history -r # overwrite the current history list commands with the commands stored in the history file 
+  #how delete bash history 
+    history -c  # delete current session history 
+    history -w  # overwrites current blank history to bash history file 
+
