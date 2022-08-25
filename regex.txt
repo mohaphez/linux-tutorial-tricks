@@ -1,18 +1,26 @@
 ghrnnrnjke
 bbrbtnm
 abcd
+linux: regex
 hello
 erejrkabcd
 hellllllo
+linux support regex
+linux support regex mode
+   i have space 
 12343-abcd
 noboooody
 34344ABCD
+    tab
+1 file found?
 You Are handsome. 
 56839
+ hello with one space.
 9912013944
 Am i ok ?
 image.png
 file.zip
+2 files found?
 @mohaphez
 #hello
 image-one.jpeg
@@ -20,3 +28,10 @@ man
 men
 miss
 gun
+24 files found?
+file_07241999.pdf
+file_08549930.pdf
+file_07241999.png
+file_project_04549320.pdf
+file_07241920.xlsx
+file_project_0499320.pdf

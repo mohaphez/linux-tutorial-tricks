@@ -80,3 +80,41 @@ echo "13. Write a pattern that match with words which that have between 2 and 3 
   # Note
     # .* that means any character could be come before l 
     # l{2,3} means word must be have between 2 and 3 of l character at least
+
+echo "14. Write a pattern that match with words which that have 1 or more 'a' character"
+  grep -P '.a+' regex.txt
+  # Note
+    # .a+ that means word must be have 1 "a" character at least
+
+echo "15. Write a pattern that match with the sentences start with digit and after that 'files' word come optionally  then 'found' word come and question mark is end of the sentence."
+  grep -P '\d+ files? found\?' regex.txt
+  # Note
+    # \d+ that means the sentence must be start with 1 digit at least
+    # files?  that means after digits the 'files' word could be come.(optionaly)
+    # \?   escape question mark.
+
+echo "16. Write a pattern that match with words which start with 1 or more space"
+  grep -P '^\s+.*' regex.txt
+  # Note
+    # ^\s+ that means the sentence must be start with 1 or more space
+
+echo "17. Write a pattern that match with the sentences which start with 'linux' and end with 'regex' word"
+  grep -P '^linux.*regex$' regex.txt
+  # Note
+    # ^linux+ that means the sentence must be start with linux
+    # .* that means afte linux any character could be come 
+    # regex$ that means the sentence must be ended with regex
+
+echo "18. Write a pattern that return just filenames which have .pdf extension"
+  grep -Po '(file.+)(?=\.pdf$)' regex.txt
+  # Note
+    # o option for show only nonempty parts of lines that match
+    # (file.+) that means select the sentence start with "file"
+    # (?=\.pdf$) that means the sentence must be ended with .pdf though not print in result
+
+
+
+
+
+
+
