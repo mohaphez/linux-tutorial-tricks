@@ -110,4 +110,3 @@
                 grep [[:alpha:]] file.txt # matches any alphabetic characters
                 grep [[:digit:]] file.txt # matches any numeric characters
                 grep [[:punct:]] file.txt # matches punctuation characters (!,#,$,@)
-    
