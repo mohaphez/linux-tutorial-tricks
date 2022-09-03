@@ -44,3 +44,15 @@
 
     tr " " "," < numbers.txt > newNumbers.txt
       # write result in the newNumbers.txt file s
+
+ #  Piping data between Program
+    # With the pip (vertical line in keyboard) , we can redirect STDOUT,STDIN and STDERR between multiple command all on the one command line . 
+    grep /sbin/nologin$ /etc/passwd | cut -d ":" -f 1 | sort 
+      # The grep filters out line ending with  "/sbin/nologin"  in /etc/passwd file.
+      # grep results redirect to cut command as a argument with pipeline (vertical line)
+      # The cut command split results with ":"  and pick up the first fields (column) then redirect all of them to the sort command as argument
+      # The sort command receives everything that comes from the cut command and sorts them and prints for you
+
+# create commands with $() method . 
+   rm -i $(ls file-*.txt)
+      # The ls command is used to list any files that have the name file-*.txt and the filenames are passed to the rm -i command . which inquires as whether or not delete each found file . This method allows you to get very creative when building commands on the fly

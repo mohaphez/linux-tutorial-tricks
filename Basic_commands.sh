@@ -62,3 +62,14 @@
     history -c  # delete current session history 
     history -w  # overwrites current blank history to bash history file 
 
+# ls is a command to list system files and directories.
+  # Example ->
+    ls # show current directory files .
+    ls /etc  # show /etc folder files . 
+    ls -l    # show current directory files with more information like files type, permissions , size , modified time . 
+    ls -lh   #  show current directory files with human readable size 
+
+# The xargs command is used in a UNIX shell to convert input from standard input into arguments to a command
+  # Example ->
+    ls -l files-*.txt | xargs -p /usr/bin/rm 
+       # 

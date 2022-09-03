@@ -110,3 +110,23 @@
                 grep [[:alpha:]] file.txt # matches any alphabetic characters
                 grep [[:digit:]] file.txt # matches any numeric characters
                 grep [[:punct:]] file.txt # matches punctuation characters (!,#,$,@)
+
+# sed command is stream editor. The sed utility edits a stream of text data based on a set of commands you supply ahead of time . 
+    #Example ->
+        echo "I love windows os and windows users "  | sed 's/windows/linux/'
+             # The sed command receive string from echo and find  the windows  word and replace it with the linux word
+             # The sed command just finds and replace the first occurrence of the word windows
+
+        echo "I love windows os and windows users "  | sed 's/windows/linux/g'
+             # The sed command receive string from echo and find the windows word and replace it with the linux word
+             # The sed command finds and replace all of the windows word
+        
+        sed 's/love/like/' sed.txt 
+             # The sed command replaces all the love word with the like word and print it without modify orginal file 
+
+        sed '/love/d' sed.txt 
+             # The sed.txt file line that contains the word love is not displayed to output . it was deleted in the output , but still exist within the text file
+
+        sed -e 's/love/like ; s/boy/girl/' sed.txt
+             #  The -e option allows you to employ multiple scripts in the sed command 
+             #  The sed command replaces the love word with the like word and also replace the boy word with the girl word and this both commands processed with together in same time  
