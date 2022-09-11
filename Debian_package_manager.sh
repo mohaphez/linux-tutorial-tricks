@@ -42,5 +42,14 @@
     apt update            # Retrieves updated information about packages in the repository
     apt upgrade           # Updates all installed packages to newest version 
 
-# apt-cache is a program that providers information about the package database. 
-  
+# apt-cache is used to query the package database for package information.
+    apt-cache depends nano  # Display the dependencies required for the package 
+    apt-cache pkgnames      # Show all the packages installed on the system 
+    apt-cache search docker # Displays the name of packages matching the specified package 
+    apt-cache showpkg nano  # Lists information about the specified package 
+    apt-cache stats         # Displays package statistics for the system 
+
+# Reconfiguring Packages 
+    dpkg-reconfiure cups    # it's handy tool for reconfigure packages where they are required configuration when it was installed 
+
+    debconf-show cups      # This tool allows you to view the package's configuration 
