@@ -72,4 +72,21 @@
 # The xargs command is used in a UNIX shell to convert input from standard input into arguments to a command
   # Example ->
     ls -l files-*.txt | xargs -p /usr/bin/rm 
-       # 
+     
+
+# The uptime command is for a quick look at system load average and check system uptime . 
+  # Example ->
+    uptime 
+  # NOTE :
+     # The load average appears as three numbers: the 1-minute,5-minute and 15-minute load averages. 
+     # It's not uncommon for the 1-minute load value to be high for short bursts pf activity. 
+     # If the 15-minute load value is high . your system may be in trouble. 
+
+# The free command is for a quick look at memory usage.
+  # Example ->
+    free -h 
+    # -h switch is for show sizes as human readable format 
+
+# The watch command is a handy little utility for monitoring process information 
+  # Example -> 
+    watch uptime # by default watch will reissue the command ever two seconds.

@@ -15,3 +15,12 @@
      # CMD  => The name of the program that was started in the process
 
 # ** Some process command names are shown in brackets . That indicates processes that are currently swapped out from physical memory into virtual memory on the hard driver . 
+  ps -u jack -U jack # show username processes 
+
+
+# View Processes With top/htop/btop 
+  # All those commands displays process information similar to the ps command in real-time mode . 
+    # NOTE:
+        # The top command is default command in linux and you don't need install anything,but htop and btop not exist on linux by default you need install them . 
+        # The htop and btop give you more inforamtion with better view  
+  top # diplays process information in real-time mode
