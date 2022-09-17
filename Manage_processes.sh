@@ -24,3 +24,10 @@
         # The top command is default command in linux and you don't need install anything,but htop and btop not exist on linux by default you need install them . 
         # The htop and btop give you more inforamtion with better view  
   top # diplays process information in real-time mode
+      # Some columns informations 
+        # PID -> The process ID 
+        # USER -> The username of ther owner of the process 
+        # PR -> The priority of the process 
+        # NI -> The nice value of the process 
+        # VIRT -> The total amount of virtual memory used by the process 
+        # RES -> The amount of physical memory the process is using . 
